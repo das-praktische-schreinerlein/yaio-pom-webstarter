@@ -5,10 +5,11 @@
 
     <!-- the base -->
     <groupId>de.yaio</groupId>
-    <artifactId>pom-webstarter</artifactId>
+    <artifactId>yaio-pom-webstarter</artifactId>
     <version>0.1.0</version>
-    <name>pom-webstarter</name>
+    <name>yaio-pom-webstarter</name>
     <description>a POM for springboot-webstarter-apps</description>
+    <url>https://github.com/das-praktische-schreinerlein/yaio-pom-webstarter</url>
     <organization>
         <name>Your-All-In-One</name>
         <url>http://www.your-all-in-one.de</url>

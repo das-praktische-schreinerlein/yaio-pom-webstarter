@@ -30,6 +30,13 @@
         <!-- prepare for springboot - activate it with "mvn package -Dpackaging.springboot-phase=package" -->
         <packaging.springboot-phase>none</packaging.springboot-phase>
 
+        <!--  maven install -->
+        <groupId>${project.groupId}</groupId>
+        <artifactId>${project.artifactId}</artifactId>
+        <version>${project.version}</version>
+        <packaging>pom</packaging>
+        <file>pom.xml</file>
+
         <!--
           ##################
           # Projectdata
@@ -60,6 +67,15 @@
         <version>1.3.0.RELEASE</version>
     </parent>
     
+    <!-- use these repositories to solve dependencies and get jars -->
+    <repositories>
+        <repository>
+            <id>git-das-praktische-schreinerlein</id>
+            <name>das-praktische-schreinerlein's Git based repo</name>
+            <url>https://github.com/das-praktische-schreinerlein/maven-repo/raw/master/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <!-- spring-boot -->
        <dependency>
